@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Creator Hub — Free & Pro AI Tools, Templates & Creator Deals</title>
+  <meta name="description" content="AI Creator Hub: the best free and pro AI tools, plug-and-play templates, and gear deals for TikTok/YouTube creators. Start creating faster." />
+  <meta name="keywords" content="AI tools creators, AI templates, CapCut templates, AI video editor, voice cloning, creator deals, AI tools hub" />
+  <meta property="og:title" content="AI Creator Hub — Free & Pro AI Tools, Templates & Deals" />
+  <meta property="og:description" content="Curated AI tools and templates for creators. Free tools for quick wins, pro tools for power users, and daily creator deals." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ff" />
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"AI Creator Hub",
+    "url":"https://your-username.github.io/your-repo",
+    "potentialAction": {
+      "@type":"SearchAction",
+      "target":"https://your-username.github.io/your-repo?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <style>
+    /* Neon/digital theme - responsive single file */
+    :root{
+      --bg:#05060a;
+      --panel:#0c0f14;
+      --accent:#00f0ff;
+      --accent2:#9b5cff;
+      --muted:#9aa3b2;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      --maxw:1040px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background:
+        radial-gradient(1200px 400px at 10% 10%, rgba(155,92,255,0.06), transparent 8%),
+        radial-gradient(800px 300px at 90% 90%, rgba(0,240,255,0.04), transparent 6%),
+        var(--bg);
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding-bottom:60px;
+    }
+
+    .wrap{max-width:var(--maxw);margin:28px auto;padding:20px}
+
+    header.hero{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+      border-radius:var(--radius);
+      padding:34px;
+      display:flex;
+      gap:24px;
+      align-items:center;
+      box-shadow: 0 6px 40px rgba(0,0,0,0.6), 0 0 24px rgba(155,92,255,0.06) inset;
+      border:1px solid rgba(255,255,255,0.03);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .hero-left{flex:1;min-width:260px}
+    .logo{
+      display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent2));
+      color:#041017;font-weight:700;margin-bottom:12px;font-size:14px;
+      box-shadow:0 6px 40px rgba(0,240,255,0.06);
+    }
+    h1{margin:0;font-size:28px;line-height:1.05;letter-spacing:-0.2px}
+    p.lead{margin:10px 0 0;color:var(--muted);font-size:15px}
+
+    .hero-ctas{margin-top:16px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+      background:transparent;border:1px solid rgba(255,255,255,0.06);
+      padding:10px 14px;border-radius:10px;color:var(--accent);text-decoration:none;font-weight:600;
+      backdrop-filter: blur(6px);
+    }
+    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#021223;border:none;box-shadow:0 8px 32px rgba(155,92,255,0.08)}
+    .btn.ghost{color:var(--muted)}
+
+    .hero-right{
+      width:360px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+      border-radius:12px;padding:14px;border:1px solid rgba(255,255,255,0.03);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    }
+    .stats{display:flex;gap:12px;flex-wrap:wrap}
+    .stat{flex:1;min-width:100px;padding:10px;background:var(--glass);border-radius:10px;text-align:center}
+    .stat b{display:block;font-size:18px;color:var(--accent)}
+    .stat span{display:block;color:var(--muted);font-size:12px;margin-top:6px}
+
+    /* Sections */
+    section.block{margin-top:22px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:18px}
+    .content{padding-right:6px}
+    .sidebar{position:sticky;top:24px;height:max-content}
+
+    /* Tool card */
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
+      padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);
+      display:flex;gap:14px;align-items:flex-start;margin-bottom:12px;
+    }
+    .badge{min-width:54px;height:54px;border-radius:10px;background:linear-gradient(180deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#021223}
+    .card h3{margin:0;font-size:16px}
+    .card p{margin:6px 0 0;color:var(--muted);font-size:13px}
+    .card .actions{margin-left:auto;text-align:right;display:flex;flex-direction:column;gap:8px}
+    .small{font-size:12px;color:var(--muted)}
+
+    /* Templates list */
+    .templates{display:flex;flex-direction:column;gap:10px}
+    .tpl{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);display:flex;justify-content:space-between;align-items:center;border:1px solid rgba(255,255,255,0.02)}
+    .tpl .meta{color:var(--muted);font-size:13px}
+
+    /* Footer */
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:940px){
+      .grid{grid-template-columns:1fr}
+      .hero-right{display:none}
+      .wrap{padding:16px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <header class="hero" role="banner">
+    <div class="hero-left">
+      <div class="logo">AI Creator Hub</div>
+      <h1>Free & Pro AI tools, plus plug-and-play templates for creators</h1>
+      <p class="lead">Make thumbnails, scripts, voiceovers, and viral short videos — fast. Free tools for quick wins. Pro tools for scale.</p>
+
+      <div class="hero-ctas">
+        <a class="btn primary" href="#tools">Explore Tools</a>
+        <a class="btn" href="#templates">Grab Templates</a>
+        <a class="btn ghost" href="#deals">Creator Deals</a>
+      </div>
+
+      <div style="margin-top:14px;color:var(--muted);font-size:13px">
+        Pro tip: Share template pages on TikTok — creators click and convert.
+      </div>
+    </div>
+
+    <aside class="hero-right" aria-hidden="true">
+      <div style="font-size:13px;color:var(--muted)">Quick stats</div>
+      <div class="stats" style="margin-top:12px">
+        <div class="stat"><b>Free</b><span>Tools you can use now</span></div>
+        <div class="stat"><b>Pro</b><span>High-commission signups</span></div>
+        <div class="stat"><b>Templates</b><span>Plug & play for creators</span></div>
+      </div>
+      <div style="margin-top:12px;font-size:13px;color:var(--muted)">Want this site live fast? Deploy to GitHub Pages and share the link in one TikTok clip.</div>
+    </aside>
+  </header>
+
+  <!-- MAIN GRID -->
+  <main class="grid" role="main">
+
+    <div class="content">
+
+      <!-- TOP TOOLS -->
+      <section id="tools" class="block" aria-labelledby="tools-h">
+        <h2 id="tools-h" style="margin-top:0;border-left:6px solid var(--accent);padding-left:12px">Top AI Tools for Creators</h2>
+
+        <!-- Tool example card (repeat/change as needed) -->
+        <article class="card">
+          <div class="badge">IMG</div>
+          <div>
+            <h3>AI Thumbnail Maker — Instant Thumbnails</h3>
+            <p>Generate scroll-stopping thumbnails with a prompt. Fast presets for YouTube and Shorts.</p>
+            <div class="small">Beginner friendly • Templates available</div>
+          </div>
+          <div class="actions">
+            <!-- Replace with your affiliate link -->
+            <a class="btn primary" href="YOUR_AFFILIATE_LINK" target="_blank" rel="noopener">Open Tool</a>
+            <button class="btn" onclick="copyToClipboard('YOUR_AFFILIATE_LINK')">Copy Link</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="badge">VID</div>
+          <div>
+            <h3>AI Short Video Generator — Script → Clip</h3>
+            <p>Turn text prompts into ready-to-post short videos (auto-captions, scenes, music).</p>
+            <div class="small">Ideal for TikTok / Reels • Fast turnaround</div>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="YOUR_AFFILIATE_LINK" target="_blank" rel="noopener">Open Tool</a>
+            <button class="btn" onclick="copyToClipboard('YOUR_AFFILIATE_LINK')">Copy Link</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="badge">AUD</div>
+          <div>
+            <h3>AI Voice Cloner — Branded Voiceovers</h3>
+            <p>Clone your voice or generate a unique brand voice for intros and multiple videos.</p>
+            <div class="small">Pro feature available • API access for studios</div>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="YOUR_AFFILIATE_LINK" target="_blank" rel="noopener">Try Voice AI</a>
+            <button class="btn" onclick="copyToClipboard('YOUR_AFFILIATE_LINK')">Copy Link</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="badge">PDF</div>
+          <div>
+            <h3>AI PDF Summarizer & Researcher</h3>
+            <p>Upload scripts or research PDFs — get short summaries, quotes, and timestamps for video captions.</p>
+            <div class="small">Great for long-form creators & edu channels</div>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="YOUR_AFFILIATE_LINK" target="_blank" rel="noopener">Summarize PDFs</a>
+            <button class="btn" onclick="copyToClipboard('YOUR_AFFILIATE_LINK')">Copy Link</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="badge">EDIT</div>
+          <div>
+            <h3>AI Video Editor — Auto-cuts & Captions</h3>
+            <p>Auto-select best clips, generate captions, and export platform-sized variants with one click.</p>
+            <div class="small">Saves hours on edits</div>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="YOUR_AFFILIATE_LINK" target="_blank" rel="noopener">Open Editor</a>
+            <button class="btn" onclick="copyToClipboard('YOUR_AFFILIATE_LINK')">Copy Link</button>
+          </div>
+        </article>
+
+        <!-- AD / PROMO SLOT - replace with AdSense code -->
+        <div style="margin-top:10px;margin-bottom:8px;padding:12px;border-radius:10px;background:linear-gradient(90deg, rgba(0,240,255,0.02), rgba(155,92,255,0.02));color:var(--muted);text-align:center">
+          <!-- ADSENSE INSERTION POINT -->
+          <!-- Insert Google AdSense script/snippet here once approved -->
+          <strong style="color:var(--accent)">Sponsor / Ad slot:</strong> Place your AdSense or affiliate banner here.
+        </div>
+
+      </section>
+
+      <!-- TEMPLATES LIBRARY -->
+      <section id="templates" class="block" aria-labelledby="templates-h" style="margin-top:18px">
+        <h2 id="templates-h" style="border-left:6px solid var(--accent);padding-left:12px">Templates Library — Plug & Play</h2>
+
+        <div class="templates" style="margin-top:10px">
+
+          <div class="tpl">
+            <div>
+              <strong>CapCut Viral Template — Hook + Drop</strong>
+              <div class="meta">Format: .ccpreset • Difficulty: Beginner • Uses: TikTok hooks</div>
+            </div>
+            <div style="display:flex;gap:8px;align-items:center">
+              <a class="btn" href="YOUR_AFFILIATE_LINK" target="_blank">Download</a>
+              <button class="btn" onclick="copyToClipboard('YOUR_AFFILIATE_LINK')">Copy Link</button>
+            </div>
+          </div>
+
+          <div class="tpl">
+            <div>
+              <strong>Thumbnail Preset Pack — Click Magnets</strong>
+              <div class="meta">Photoshop / PNG assets • Editable • High CTR</div>
+            </div>
+            <div style="display:flex;gap:8px;align-items:center">
+              <a class="btn" href="YOUR_AFFILIATE_LINK" target="_blank">Get Pack</a>
+              <button class="btn" onclick="copyToClipboard('YOUR_AFFILIATE_LINK')">Copy Link</button>
+            </div>
+          </div>
+
+          <div class="tpl">
+            <div>
+              <strong>Script Prompts — 30 Hooks</strong>
+              <div class="meta">Instant short-video scripts • Paste & record</div>
+            </div>
+            <div style="display:flex;gap:8px;align-items:center">
+              <a class="btn" href="YOUR_AFFILIATE_LINK" target="_blank">Grab Prompts</a>
+              <button class="btn" onclick="copyToClipboard('YOUR_AFFILIATE_LINK')">Copy Link</button>
+            </div>
+          </div>
+
+          <div class="tpl">
+            <div>
+              <strong>Audio Stems Pack — Royalty Free</strong>
+              <div class="meta">Short loopable music for intros & B-roll</div>
+            </div>
+            <div style="display:flex;gap:8px;align-items:center">
+              <a class="btn" href="YOUR_AFFILIATE_LINK" target="_blank">Download</a>
+              <button class="btn" onclick="copyToClipboard('YOUR_AFFILIATE_LINK')">Copy Link</button>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="margin-top:12px;color:var(--muted);font-size:13px">
+          Tip: Create one short TikTok demonstrating a template, add the page link in bio — instant traffic.
+        </div>
+
+      </section>
+
+      <!-- DEALS -->
+      <section id="deals" class="block" aria-labelledby="deals-h" style="margin-top:18px">
+        <h2 id="deals-h" style="border-left:6px solid var(--accent);padding-left:12px">Creator Deals — Gear & Subscriptions</h2>
+
+        <article class="card">
+          <div class="badge">MIC</div>
+          <div>
+            <h3>Budget Microphones — Best value for creators</h3>
+            <p>USB & XLR options that sound studio-clean for voiceovers and live streams.</p>
+            <div class="small">Affiliate tip: pair with a pop filter + boom arm.</div>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="YOUR_AFFILIATE_LINK" target="_blank">Shop Mics (Amazon)</a>
+            <button class="btn" onclick="copyToClipboard('YOUR_AFFILIATE_LINK')">Copy Link</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="badge">LIGHT</div>
+          <div>
+            <h3>Creator Lighting — Ring lights & softboxes</h3>
+            <p>Affordable kits to level up video quality and watch time.</p>
+            <div class="small">High conversion on visual-focused ads.</div>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="YOUR_AFFILIATE_LINK" target="_blank">View Lighting Deals</a>
+            <button class="btn" onclick="copyToClipboard('YOUR_AFFILIATE_LINK')">Copy Link</button>
+          </div>
+        </article>
+
+        <!-- Quick affiliate reminder -->
+        <div style="margin-top:12px;padding:12px;border-radius:10px;background:rgba(0,0,0,0.25);color:var(--muted);font-size:13px">
+          Note: Use Amazon affiliate links for physical gear, and high-commission partners for AI tools (Runway, Descript, Synthesia, etc.).
+        </div>
+
+      </section>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <section class="block" style="margin-bottom:12px">
+        <h3 style="margin-top:0">Get the viral kit</h3>
+        <p style="color:var(--muted);font-size:13px">Sign up for template drops and weekly deals (no spam).</p>
+        <!-- Simple subscribe; replace action with your mail provider or form -->
+        <form id="signup" onsubmit="event.preventDefault();alert('Replace with real signup form.');" style="display:flex;gap:8px;margin-top:10px">
+          <input aria-label="email" placeholder="you@creator.com" style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" />
+          <button class="btn primary" type="submit">Join</button>
+        </form>
+        <div style="margin-top:10px;color:var(--muted);font-size:12px">Or copy the link and share in your bio.</div>
+      </section>
+
+      <section class="block" style="margin-bottom:12px">
+        <h3 style="margin-top:0">Top converting hooks</h3>
+        <ol style="color:var(--muted);font-size:13px;margin:8px 0;padding-left:18px">
+          <li>Show result first → quick reveal</li>
+          <li>“I made this in 30s using…” (tool mention)</li>
+          <li>Before vs after thumbnails</li>
+        </ol>
+      </section>
+
+      <section class="block">
+        <h3 style="margin-top:0">Monetization spots</h3>
+        <ul style="color:var(--muted);font-size:13px;margin:8px 0;padding-left:18px">
+          <li>Tool CTA buttons → affiliate links</li>
+          <li>Template downloads → email gate / affiliate upsell</li>
+          <li>Deals pages → Amazon affiliate</li>
+          <li>AdSense placements between cards</li>
+        </ul>
+      </section>
+
+    </aside>
+  </main>
+
+  <footer>
+    <div style="max-width:var(--maxw);margin:18px auto;padding:10px;color:var(--muted)">
+      © <span id="year"></span> AI Creator Hub — Affiliate links help keep this free. Replace placeholder links before publishing.
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  // small helpers
+  function copyToClipboard(text){
+    if(!text || text.includes('YOUR_AFFILIATE_LINK')){
+      navigator.clipboard.writeText(location.href).then(()=> {
+        alert('Replace placeholders with real links. Page URL copied.');
+      }).catch(()=> alert('Copy failed — replace manually.'));
+      return;
+    }
+    navigator.clipboard.writeText(text).then(()=> {
+      alert('Link copied to clipboard');
+    }).catch(()=> alert('Copy failed'));
+  }
+
+  // set year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // small smooth-scroll for internal links
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', e=>{
+      e.preventDefault();
+      const target=document.querySelector(a.getAttribute('href'));
+      if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+    })
+  });
+</script>
+
+</body>
+</html>
