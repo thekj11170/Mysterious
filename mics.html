@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Creator Microphones — AI Creator Hub</title>
+  <meta name="description" content="Best microphones for content creators: pro, mid-range, and budget picks." />
+
+  <style>
+    :root{
+      --bg:#05060a;
+      --panel:#0c0f14;
+      --accent:#00f0ff;
+      --accent2:#9b5cff;
+      --muted:#9aa3b2;
+      --radius:14px;
+      --maxw:1040px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:var(--bg);
+      color:#e6eef8;
+    }
+    .wrap{max-width:var(--maxw);margin:28px auto;padding:20px}
+    h1,h2{margin:0 0 10px}
+    p{color:var(--muted);font-size:14px}
+    .btn{
+      background:transparent;border:1px solid rgba(255,255,255,0.06);
+      padding:10px 14px;border-radius:10px;color:var(--accent);
+      text-decoration:none;font-weight:600;
+    }
+    .btn.primary{
+      background:linear-gradient(90deg,var(--accent),var(--accent2));
+      color:#021223;border:none;
+    }
+    section{margin-top:26px}
+    .card{
+      border:1px solid rgba(255,255,255,0.04);
+      border-radius:12px;
+      padding:16px;
+      margin-top:12px;
+      display:flex;
+      justify-content:space-between;
+      gap:14px;
+      align-items:center;
+    }
+    .info{max-width:70%}
+    footer{margin:40px 0;text-align:center;color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+
+<a href="index.html" class="btn">← Back to Home</a>
+
+<h1 style="margin-top:16px">Best Microphones for Content Creators</h1>
+<p>Hand-picked microphones for creators who care about clean, clear audio. No podcast-only gear. Just tools that work.</p>
+
+<!-- PRO -->
+<section>
+  <h2>Pro-Level Microphones</h2>
+
+  <div class="card">
+    <div class="info">
+      <strong>Shure SM7B</strong>
+      <p>Broadcast-grade sound, excellent noise rejection. Ideal for serious creators and studio setups.</p>
+    </div>
+    <a class="btn primary" href="PASTE_AFFILIATE_LINK_HERE" target="_blank">Buy</a>
+  </div>
+</section>
+
+<!-- MID -->
+<section>
+  <h2>Mid-Range Microphones</h2>
+
+  <div class="card">
+    <div class="info">
+      <strong>Shure MV7</strong>
+      <p>USB + XLR flexibility. Clean sound without complex gear. Perfect balance of quality and ease.</p>
+    </div>
+    <a class="btn primary" href="PASTE_AFFILIATE_LINK_HERE" target="_blank">Buy</a>
+  </div>
+</section>
+
+<!-- BUDGET -->
+<section>
+  <h2>Budget Microphones</h2>
+
+  <div class="card">
+    <div class="info">
+      <strong>FIFINE K669B / K688</strong>
+      <p>Affordable USB microphones that outperform built-in mics by a mile. Plug-and-play.</p>
+    </div>
+    <a class="btn primary" href="PASTE_AFFILIATE_LINK_HERE" target="_blank">Buy</a>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> AI Creator Hub
+</footer>
+
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
